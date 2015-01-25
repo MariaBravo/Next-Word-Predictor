@@ -1,0 +1,16 @@
+{
+    "contents" : "Next Word Predictor\n========================================================\n![alt text](datascience.png)\n\nWorking with n-gram frequency tables and raw file streams\n\nMaria Bravo  \nDecember 2014  \n\n\nServices provided by the NextWord Predictor application\n===========================================================\n\nTwo approaches to the word prediction problem have been implemented in this Shiny app:  <small>\n- Build n-grams tables over cleaned text files and execute searches into the weighted frequencies of grams.\n- Design an algorithm to look into unprocessed text files limited in size because of resources limitation issues. This approach searches on the fly entire paragraphs using regular expressions.  \ne.g. sentence:  \"love my family\":  \n            regexp: \".{0,1}\\\\blove\\\\b.{0,1}\\\\bmy\\\\b.{0,1}\\\\bfamily\\\\b\" </small>   \n<h6 align=\"left\">\n <font face=\"Times\" color=\"blue\">\nWhere {0,1} are parameters used to tune the distance between the sentence words when the algorithm is looking into the file paragraphs. </font>\n</h6>\n\n\nUsing n-gram frequency tables\n========================================================\n\n![alt text](screenNGRAMS.jpg)\n\nSearching into raw unprocessed text files\n========================================================\n\n![alt text](screenRAW.png)\n\nWill you stop the sea tides with a blanket?\n========================================================\n- Language is alive and the change is always coming.\n- We can not build static structures as dictionaries. Who can establish which words should be filtered?. What is a foreign word in the global village?. Twitter is teaching us better.\n- Graphic symbols as emoticons belong to the language in use. Excluding stop words? According to the n-gram files built for this project the word \"the\" represents more than 6% of the entire English corpora.\n- The scanning of raw text files implemented in the second algorithm provides a more efficient solution to the word prediction problem. A corpora feeding on \nreal-time data stream will be able to deliver answers fitted to the timeline.\n- About statistical evidence, because of time restrictions the test scripts (coded in Python) have not been finished. But the running application shows the difference between both approaches.\n\n\n\n\n\n\n",
+    "created" : 1418548350331.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3351919380",
+    "id" : "EC3950BD",
+    "lastKnownWriteTime" : 1418548720,
+    "path" : "~/Desktop/Coursera/Presentation/NextWordPredictor.Rpres",
+    "project_path" : null,
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}

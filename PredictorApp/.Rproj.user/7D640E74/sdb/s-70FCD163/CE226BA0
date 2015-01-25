@@ -1,0 +1,17 @@
+{
+    "contents" : "\nshinyUI(fluidPage(\n  headerPanel(\"Next Word Predictor\"),\n  #titlePanel(\"Next Word Predictor\"),\n  tags$style(type=\"text/css\", \"textarea { width: 600px; }\"),\n  \n  absolutePanel(\n  tags$h3(\"Using nGrams tables\"),  \n  tags$h4(\"Type a sentence\"),\n  tags$style(type = \"text/css\", \".navbar {background-color: blue;}\"),\n  tags$div(HTML(\"<font color='blue'; size = 2 > Press &lt;space&gt; to get the predicted next word. Press a button to select the word. </font>\")),\n  tags$textarea(id=\"sentence\", rows=4, cols=120, \"\"),\n  #h6(textOutput(\"sentenceEntered\", container=span)),  \n  uiOutput(\"uiOutputPanel\"),\n  top = 100, left = 10, right = 10, bottom = 500, width = 600, height = 300, draggable = FALSE, \n  fixed = FALSE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\")),\n  \n  #h6(textOutput(\"sentenceEntered\", container=span)),\n  absolutePanel(\n  tags$h3(\"Reading files stream\"),  \n  tags$h4(\"Type a sentence\"),\n  tags$style(type = \"text/css\", \".navbar {background-color: blue;}\"),\n  tags$div(HTML(\"<font color='blue'; size = 2 > Press &lt;space&gt; to get the predicted next word. Press a button to select the word. </font>\")),  \n  tags$textarea(id=\"sentence2\", rows=4, cols=120, \"\"),\n  uiOutput(\"uiOutputPanel2\"),\n  top = 400, left = 10, right = 10, bottom = 100, width = 600, height = 300, draggable = FALSE, \n  fixed = FALSE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\") ),\n  tags$style(HTML(\"\n                  body {\n                  font-size: 16px;\n                  background-color: #CEE3F6;\n                  }\n                  .span8 .well { \n                  background-color: #00FFFF; \n                  }\n                \")\n  ),\n  \n  absolutePanel(\n    wellPanel(\n    #tags$textarea(id=\"sentenceEntered\", rows=4, cols=120, \"\"),\n    textOutput(\"sentenceEntered\")),\n    top = 100, left = 700, right = 100, bottom = 100, width = 50, height = 50, draggable = FALSE, \n    fixed = TRUE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\"))\n  \n))\n",
+    "created" : 1418521444375.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1957275133",
+    "id" : "CE226BA0",
+    "lastKnownWriteTime" : 1418521718,
+    "path" : "~/Desktop/Coursera/PredictorApp/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

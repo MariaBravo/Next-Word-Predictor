@@ -1,0 +1,17 @@
+{
+    "contents" : "\nshinyUI(fluidPage(\n  titlePanel(\"Next Word Predictor\"),\n  tags$style(type=\"text/css\", \"textarea { width: 600px; }\"),\n  tags$h6(\"* This application provides predictions based on n-gram frequency tables\",\n           \"and predictions extracted from raw text files.\"),\n  tags$h6(\"* The left panel shows the word list returned by the search for the next word.\"),\n  tags$h6(\"* Please, be aware that you must press the <space> key after each word in order to trigger the next prediction.\"),  \n  \n  \n  absolutePanel(\n  tags$h3(\"Using n-gram frequency tables\"),  \n  tags$h4(\"Type a sentence\"),\n  tags$style(type = \"text/css\", \".navbar {background-color: blue;}\"),\n  tags$div(HTML(\"<font color='blue'; size = 2 > Press &lt;space&gt; to get the predicted next word. Press a button to select a word. </font>\")),\n  tags$textarea(id=\"sentence\", rows=4, cols=120, \"\"),\n  #h6(textOutput(\"sentenceEntered\", container=span)),  \n  uiOutput(\"uiOutputPanel\"),\n  top = 170, left = 50, right = 10, bottom = 500, width = 600, height = 300, draggable = FALSE, \n  fixed = FALSE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\")),\n  \n  #h6(textOutput(\"sentenceEntered\", container=span)),\n  absolutePanel(\n  tags$h3(\"Reading files stream\"),  \n  tags$h4(\"Type a sentence\"),\n  tags$style(type = \"text/css\", \".navbar {background-color: blue;}\"),\n  tags$div(HTML(\"<font color='blue'; size = 2 > Press &lt;space&gt; to get the predicted next word. Press a button to select a word. </font>\")),  \n  tags$textarea(id=\"sentence2\", rows=4, cols=120, \"\"),\n  uiOutput(\"uiOutputPanel2\"),\n  top = 430, left = 50, right = 10, bottom = 100, width = 600, height = 300, draggable = FALSE, \n  fixed = FALSE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\") ),\n  tags$style(HTML(\"\n                  body {\n                  font-size: 16px;\n                  background-color: #CEE3F6;\n                  }\n                  .span8 .well { \n                  background-color: #00FFFF; \n                  }\n                \")\n  ),\n  \n  absolutePanel(\n    tags$h5(\"Words returned by the algorithm\"),      \n    wellPanel(\n    #tags$textarea(id=\"sentenceEntered\", rows=4, cols=120, \"\"),\n    textOutput(\"sentenceEntered\")),\n    top = 100, left = 750, right = 100, bottom = 100, width = 250, height = 50, draggable = FALSE, \n    fixed = TRUE, cursor = c(\"auto\", \"move\", \"default\", \"inherit\"))\n  \n))\n",
+    "created" : 1418441802054.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2728076152",
+    "id" : "E6C989C7",
+    "lastKnownWriteTime" : 1418535495,
+    "path" : "~/Desktop/Coursera/PredictorApp/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
